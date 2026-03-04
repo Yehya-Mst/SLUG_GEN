@@ -1,0 +1,15 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "My first TypeScript library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "eslint src/**/*.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
