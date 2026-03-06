@@ -1,4 +1,7 @@
-export const slugify = (text :string ): string =>  {
+export const slugify = (text : string) : string =>  {
+  if(typeof text !== "string") {  
+    throw new Error("Input must be a string");  
+  }
   return text
             .trim()
             .toLocaleLowerCase()
