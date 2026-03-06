@@ -1,17 +1,16 @@
 import { slugify } from "./index";
 describe("slugify", () => {
 
-  // Core behavior
-  test("Hello World → hello-world", () => {
-    console.log(slugify("Hello World"));
+
+  test("lowercase ", () => {
     expect(slugify("Hello World")).toBe("hello-world");
   });
 
-  test("trim + lowercase + collapse spaces", () => {
+  test("trim + collapse spaces", () => {
     expect(slugify(" HELLO world ")).toBe("hello-world");
   });
 
-  // Separators
+
   test("underscores", () => {
     expect(slugify("hello__world")).toBe("hello-world");
   });
