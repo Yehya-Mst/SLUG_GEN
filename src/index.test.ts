@@ -1,7 +1,6 @@
 import { slugify } from "./index";
 describe("slugify", () => {
-
-
+  
   test("lowercase ", () => {
     expect(slugify("Hello World")).toBe("hello-world");
   });
@@ -9,7 +8,6 @@ describe("slugify", () => {
   test("trim + collapse spaces", () => {
     expect(slugify(" HELLO world ")).toBe("hello-world");
   });
-
 
   test("underscores", () => {
     expect(slugify("hello__world")).toBe("hello-world");
