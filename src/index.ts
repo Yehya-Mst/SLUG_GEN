@@ -10,6 +10,3 @@ export const slugify = (text : string) : string =>  {
             .replace(/-+/g,"-")
             .replace(/^-|-$/g,"");
 };
-const name : string = "ALI";
-slugify(name);
-
