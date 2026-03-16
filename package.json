@@ -5,7 +5,7 @@
 	"scripts": {
 		"lint": "eslint . ",
 		"dev": "nodemon src/index.ts",
-		"test": "jest --watchAll",
+		"test": "jest",
 		"build": "npm run clean && tsc",
 		"clean": "rimraf ./dist"
 	},
