@@ -1,6 +1,7 @@
 {	"name": "slug-lib",
 	"main": "dist/index.js",
 	"files": ["./dist"],
+	"types" : "dist/index.d.ts",
 	"scripts": {
 		"lint": "eslint . ",
 		"dev": "nodemon src/index.ts",
